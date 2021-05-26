@@ -23,7 +23,7 @@ const MainNav: FC = () => {
   }, []);
   return (
     <NavigationContainer>
-      {user !== null ? <AuthStack /> : <AppStack />}
+      {user === null ? <AuthStack /> : <AppStack />}
     </NavigationContainer>
   );
 };
